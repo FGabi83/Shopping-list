@@ -1,0 +1,28 @@
+/*LAYOUT*/
+
+
+.shoppinglist {
+  display:        flex;
+  flex-direction: column;
+  height:         100vh;
+}
+
+  .main {
+    flex:           1;
+  }
+
+  .control-buttons {
+    display:       grid;
+    grid-template-areas:
+    "info info info"
+    "btn-clear btn-hide btn-show"
+    "btn-save btn-save btn-save";
+    grid-gap:      .625rem;
+    margin-bottom: var(--margin-bottom);
+  }
+
+    .info {grid-area: info;}
+    .button--clear {grid-area: btn-clear;}
+    .button--hide {grid-area: btn-hide;}
+    .button--show {grid-area: btn-show;}
+    .button--save {grid-area: btn-save;}
